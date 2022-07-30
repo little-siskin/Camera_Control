@@ -1,0 +1,124 @@
+{
+    "version": "3.15.2",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "875.8455551999999",
+                    "736.0546944"
+                ],
+                [
+                    "1735.3952000000002",
+                    "1406.2500479999999"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "Y",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "1015.1470847999999",
+                    "259.6289088"
+                ],
+                [
+                    "1478.2168576000001",
+                    "616.9335936"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "429.15440639999997",
+                    "897.8320319999999"
+                ],
+                [
+                    "698.90624",
+                    "1292.5195391999998"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "Y",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "1971.3144320000001",
+                    "444.492192"
+                ],
+                [
+                    "2244.871424",
+                    "856.9335936"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "2009.0348800000002",
+                    "1130.742144"
+                ],
+                [
+                    "2275.06432",
+                    "1482.714816"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "1343.8786559999999",
+                    "1566.269568"
+                ],
+                [
+                    "1747.9687680000002",
+                    "1626.67968"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "lineColor": [
+        0,
+        255,
+        0,
+        128
+    ],
+    "fillColor": [
+        255,
+        0,
+        0,
+        128
+    ],
+    "imagePath": "/home/o/Camera_Control/redis/data/image/2022-03-09-13-27-09.jpg",
+    "imageData": null,
+    "imageHeight": 2560,
+    "imageWidth": 1920
+}

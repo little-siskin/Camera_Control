@@ -1,0 +1,73 @@
+{
+    "version": "3.15.2",
+    "flags": {},
+    "shapes": [
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "2221.6984576",
+                    "805.3333247999999"
+                ],
+                [
+                    "2486.7938304",
+                    "1185.777792"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "746.481792",
+                    "1159.1111039999998"
+                ],
+                [
+                    "1141.3518592",
+                    "1619.55552"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "151.95840768",
+                    "851.5555584000001"
+                ],
+                [
+                    "-31.057192960000002",
+                    "529.7777856"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "lineColor": [
+        0,
+        255,
+        0,
+        128
+    ],
+    "fillColor": [
+        255,
+        0,
+        0,
+        128
+    ],
+    "imagePath": "/home/o/Camera_Control/redis/data/image/2022-01-15-17-04-31.jpg",
+    "imageData": null,
+    "imageHeight": 2560,
+    "imageWidth": 1920
+}

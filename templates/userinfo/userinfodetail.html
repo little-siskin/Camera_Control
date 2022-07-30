@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>详细信息</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../statics/layui/css/layui.css" media="all" />
+	<style type="text/css">
+		.layui-form { width:40%; float:left; margin-left:5%; margin-top: 3%}
+	</style>
+</head>
+<body class="childrenBody">
+	<div class="layui-form-item">
+		<label class="layui-form-label">ID</label>
+		<div class="layui-input-inline">
+			<input type="text" class="layui-input " readonly="true" name="id" value="{{ m.id}}" lay-verify="required">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">用户名</label>
+		<div class="layui-input-inline">
+			<input type="text" class="layui-input" readonly="true" name="user_name" lay-verify="required" value="{{ m.user_name}}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">登陆密码</label>
+		<div class="layui-input-inline">
+			<input type="text" class="layui-input" readonly="true" name="pwd" lay-verify="required" value="{{ m.pwd}}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">权限</label>
+		<div class="layui-input-inline">
+			<input type="text" class="layui-input" readonly="true" name="authority" lay-verify="required" value="{{ m.authority}}">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">邮箱</label>
+		<div class="layui-input-inline">
+			<input type="text" class="layui-input" readonly="true" name="authority" lay-verify="required" value="{{ m.email}}">
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">摄像头id</label>
+		<div class="layui-input-inline">
+			<input type="text" class="layui-input" readonly="true" name="authority" lay-verify="required" value="{{ m.cam_id}}">
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="../statics/layui/layui.js"></script>
+	<script type="text/javascript" src="../statics/js/userinfo/userinfodetail.js"></script>
+</body>
+</html>

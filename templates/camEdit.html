@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CamEdit</title>
+    </head>
+    <body>
+        <form action="{% url 'app01:updateCam' %}" method="GET">
+            {% csrf_token %}
+            <input type="hidden" name="id" value="{{ cam.id }}">
+            IP：<input type="text" name="ip" value="{{ cam.cam_ip }}"><br>
+            rtspIP：<input type="text" name="rtsp_ip" value="{{ cam.rtsp_ip }}"><br>
+            <input type="submit" value="保存"><br>
+            <p><a href="{% url 'app01:userIndex' %}">返回</a></p> 
+        </form>
+    </body>
+</html>

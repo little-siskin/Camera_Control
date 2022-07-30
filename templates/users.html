@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function showForm(){
+        var  camadd=document.getElementById('camAdd');
+        camadd.style.display="block";
+        }
+    
+        function hideForm(){
+        var  camadd=document.getElementById('camAdd');
+        camadd.style.display="none";
+        }
+    
+        function showEdit(){
+        var  camadd=document.getElementById('camEdit');
+        camadd.style.display="block";
+        }
+    
+        function hideEdit(){
+        var  camadd=document.getElementById('camEdit');
+        camadd.style.display="none";
+        }
+    
+    </script>
+<a href="/app01/openUserAdd" >添加</a>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>用户名</th>
+        <th>邮箱</th>
+        <th>密码</th>
+        <th>权限</th>
+        <th>摄像头id</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in ls %}
+        <tr align="center">
+            <td>{{ row.id }}</td>
+            <td>{{ row.user_name }}</td>
+            <td>{{ row.email }}</td>
+            <td>{{ row.pwd }}</td>
+            <td>{{ row.authority }}</td>
+            <td>{{ row.cam_id.id }}</td>
+            <td>
+                <a href="/deleteUser?id={{ row.id }}">删除</a>
+                |
+                <a href="/openEdit?id={{ row.id }}">编辑</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<hr>
+<table border="2">
+    <thead>
+        <tr>
+            <th>摄像头id</th>
+            <th>摄像头ip</th>
+            <th>摄像头rstp ip</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cam in camls %}
+        <tr align="center">
+            <td>{{ cam.id }}</td>
+            <td>{{ cam.cam_ip }}</td>
+            <td>{{ cam.rtsp_ip }}</td>
+            <td>
+                <a href="/deleteCam?id={{ cam.id }}">删除</a>
+                    |
+                <a href="/openCamEdit?id={{ cam.id }}">编辑</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            
+        </tr>       
+    </tfoot>
+</table>
+
+<button type="button" onclick="showForm()">添加</button>
+
+<div style="display: none;" id="camAdd">
+    <form action="/camAdd" method="GET">
+        {% csrf_token %}
+        IP：<input type="text" name="ip" value=""><br>
+        rtspIP：<input type="text" name="rtsp_ip" value=""><br>
+        <input type="submit" value="添加">
+        |
+        <button type="button" onclick="hideForm()">取消</button>
+    </form>
+</div>
+{% if messages %}
+  <script> 
+
+      alert('{{ messages }}');
+    
+  </script>
+{% endif %}
+<body>
+<!-- <p><a href="{% url 'app01:logout' %}">退出登录</a></p> -->
+</body>
+</html>

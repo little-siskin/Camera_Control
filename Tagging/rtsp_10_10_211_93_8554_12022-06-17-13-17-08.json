@@ -1,0 +1,42 @@
+{
+    "shapes": [
+        {
+            "label": "B",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "826.1914368",
+                    "960.0781311999999"
+                ],
+                [
+                    "1218.938112",
+                    "459.92186879999997"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        },
+        {
+            "label": "Y",
+            "line_color": null,
+            "fill_color": null,
+            "points": [
+                [
+                    "1196.425536",
+                    "1870.312448"
+                ],
+                [
+                    "1554.9958464000001",
+                    "1265.8593792000001"
+                ]
+            ],
+            "shape_type": "rectangle",
+            "flags": {}
+        }
+    ],
+    "imagePath": "/home/o/Camera_Control_multiprocess/Tagging/rtsp_10_10_211_93_8554_12022-06-17-13-17-08.jpg",
+    "imageData": null,
+    "imageHeight": 1920,
+    "imageWidth": 2560
+}

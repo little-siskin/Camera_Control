@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<script type="text/javascript" >
+    function isNull(){
+    var tab = document.getElementById("userEdit");
+    var ipt = tab.getElementsByTagName("input");
+
+    for(i = 0; i < ipt.length; i++){
+        if((ipt[i].getAttribute("type") == "text") && (ipt[i].value == "")){
+            alert("输入不能为空！请检查输入内容。");
+            return false;
+        }
+    }
+}
+</script>
+<form action="/app01/updateUser" method="GET" id="userEdit" onsubmit="return isNull()">
+    {% csrf_token %}
+    <input type="hidden" name="id" value="{{ m.id }}">
+    账号：<input type="text" name="user_name"  value="{{ m.user_name }}"><br>
+    邮箱：<input type="text" name="email" value="{{ m.email }}"><br>
+    密码：<input type="text" name="pwd"  value="{{ m.pwd }}"><br>
+    权限：<input type="text" name="authority" value="{{ m.authority }}"><br>
+    摄像头id：<input type="text" name="cam_id" value="{{ m.cam_id }}"><br>
+    <input type="submit" value="提交">
+</form>
+{% if error_message %}
+<p style="color: red;"><strong>{{ error_message }}</strong></p>
+{% endif %}
+<p><a href="{% url 'app01:userIndex' %}">返回</a></p>
+</body>
+</html>
